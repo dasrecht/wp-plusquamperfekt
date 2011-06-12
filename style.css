@@ -1,5 +1,5 @@
 /*
-Theme Name: +-quam-PERFEKT!
+Theme Name: Plusquamperfekt!
 
 */
 
@@ -162,6 +162,10 @@ article {border-top: 1px solid #DDD !important; padding: 0px 0px 100px 0px !impo
 .postmetadata {}
 
 #sidebar {}
+#sidebar {border-top: 1px solid #DDD; padding-top:30px; background-color:black;}
+#sidebar .inhalt {margin-left: auto; margin-right: auto;width:70%; color:#ccc;}
+#sidebar a {color: #ccc;background-color:transparent;}
+
 #sidebar h4 {padding-top:20px;}
 .navgation {}
 .next-posts {}
@@ -240,45 +244,24 @@ ol.commentlist li.thread-odd {}
 }
 
 
-
+/*	kleine Helfer
+	-------------		*/
 .versteckt {display:none;}
+.keinlinkstyle {background:none;}
 
+/*	OSM Grid System
+	---------------		*/
 
-h1,h2,h3,h4 { font-family: 'Amaranth', arial, serif; }
-
-
-/*	Less Framework 4
-	http://lessframework.com
-	by Joni Korpi
-	License: http://opensource.org/licenses/mit-license.php	*/
-
-
-/*	Resets
-	------	*/
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup, 
-menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-article, aside, canvas, figure, figure img, figcaption, hgroup,
-footer, header, nav, section, audio, video {
-	display: block;
-}
-
-a img {border: 0;}
-
+.dp50 {width:50%;  float:left;  display: inline;  margin-right:-1px; }
+.dp33 {width:33%;  float:left;  display: inline;  margin-right:-1px; }
+.dp100 {width:100%; display: inline;  margin-right:-1px; }
 
 
 /*	Typography presets
 	------------------	*/
+
+
+h1,h2,h3,h4 { font-family: 'Amaranth', arial, serif; }
 
 .gigantic {
 	font-size: 110px;
@@ -316,6 +299,11 @@ body {
 	line-height: 18px;
 }
 
+a {text-decoration:none; background:#ddd; color:#333;}
+html { background-color: #EEE;}
+
+
+
 /* Selection colours (easy to forget) */
 
 ::selection 	 	{background: rgb(255,255,158);}
@@ -327,70 +315,22 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
 
-#sidebar{border-top: 1px solid #DDD; padding-top:30px;
-background-color:black;
 
-}
+/*	Navigation & Pagination Styles
+	------------------------------	*/
 
-#sidebar .inhalt {
-margin-left: auto;
-margin-right: auto;
-width:70%;
-color:#ccc;
-}
-#sidebar a {
-color: #ccc;
-background-color:transparent;
-}
+.navigation{margin-left: auto; margin-right: auto; display: table; text-align:center; padding-bottom:20px;} 
 
-html {
-background-color: #EEE;
-}
-
-
-a {text-decoration:none; background:#ddd; color:#333;}
-
-.navigation{
- 	margin-left: auto;
- 	margin-right: auto;
- 	display: table;
-	text-align:center;
-	padding-bottom:20px;
- } 
 .pagination {}
+.pagination span, .pagination a {display:block;float:left;margin: 2px 2px 2px 0;padding:6px 9px 5px 9px;text-decoration:none;width:auto;}
+.pagination a:hover{color:#fff;background: #3279BB;}
+.pagination .current{padding:6px 9px 5px 9px;background: #3279BB;color:#fff;}
 
-.pagination span, .pagination a {
-display:block;
-float:left;
-margin: 2px 2px 2px 0;
-padding:6px 9px 5px 9px;
-text-decoration:none;
-width:auto;
-}
- 
-.pagination a:hover{
-color:#fff;
-background: #3279BB;
-}
- 
-.pagination .current{
-padding:6px 9px 5px 9px;
-background: #3279BB;
-color:#fff;
-}
+header {position: absolute;left: 42px;top: 42px;background:#ccc;padding:10px;display:noddne;	}
 
-header {
 
-position: fixed;
-left: 42px;
-top: 42px;
-background:#ccc;
-padding:10px;
-display:none;
-	
-
-}
-
+/*	Kommentardings
+	--------------		*/
 
 .kommentarthingy {
 float: right;
@@ -423,7 +363,3 @@ text-decoration: none;
 text-align: center;
 color: #565656 !important;
 }
-.dp50 {width:50%;  float:left;  display: inline;  margin-right:-1px; }
-.dp33 {width:33%;  float:left;  display: inline;  margin-right:-1px; }
-.dp100 {width:100%; display: inline;  margin-right:-1px; }
-

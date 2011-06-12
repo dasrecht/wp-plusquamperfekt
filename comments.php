@@ -80,8 +80,6 @@
 	<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>
 </div>
 
-
-
 		<div>
 			<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 			<?php comment_id_fields(); ?>
