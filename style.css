@@ -151,7 +151,7 @@ article {border-top: 1px solid #DDD !important; padding: 0px 0px 100px 0px !impo
 .eintrag {width:960px; margin-left:auto; margin-right:auto;}
 .der-inhalt {padding:20px;}
 .der-inhalt img {text-align:center;}
-.der-inhalt h2 {padding-bottom:10px;}
+.der-inhalt h2, .der-inhalt h1 {padding-bottom:10px;}
 .post {}
 
 .entry-content {}
@@ -423,5 +423,7 @@ text-decoration: none;
 text-align: center;
 color: #565656 !important;
 }
-.dp50 {width:50%;  float:left;  display: inline;  *margin-right:-1px; }
+.dp50 {width:50%;  float:left;  display: inline;  margin-right:-1px; }
+.dp33 {width:33%;  float:left;  display: inline;  margin-right:-1px; }
+.dp100 {width:100%; display: inline;  margin-right:-1px; }
 

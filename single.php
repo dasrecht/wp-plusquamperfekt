@@ -26,10 +26,9 @@
 
 
 		</article>
-			<div class="eintrag">
-
-	<?php comments_template(); ?>
-</div>
+		<div class="eintrag comments">
+			<?php  comments_template(); ?>
+		</div>
 	<?php endwhile; endif; ?>
 
 <?php get_sidebar(); ?>
