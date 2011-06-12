@@ -326,7 +326,6 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 .pagination a:hover{color:#fff;background: #3279BB;}
 .pagination .current{padding:6px 9px 5px 9px;background: #3279BB;color:#fff;}
 
-header {position: absolute;left: 42px;top: 42px;background:#ccc;padding:10px;display:noddne;	}
 
 
 /*	Kommentardings
@@ -363,3 +362,9 @@ text-decoration: none;
 text-align: center;
 color: #565656 !important;
 }
+
+
+header {position: absolute;left: 42px;top: 42px;padding:10px;}
+
+article:first-of-type {margin-top:111px; border-top:none !important;}
+article:first-of-type .kommentarthingy {margin-top:-111px;}
