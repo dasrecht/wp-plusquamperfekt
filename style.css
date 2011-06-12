@@ -168,7 +168,7 @@ article {border-top: 1px solid #DDD !important; padding: 0px 0px 100px 0px !impo
 .prev-posts {}
 
 #searchform {}
-#s {}
+#s { width: 55%;}
 #searchsubmt {}
 
 ol.commentlist {list-style: none;}
