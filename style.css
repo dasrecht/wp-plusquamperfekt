@@ -162,7 +162,7 @@ article {border-top: 1px solid #DDD !important; padding: 0px 0px 100px 0px !impo
 .postmetadata {}
 
 #sidebar {}
-
+#sidebar h4 {padding-top:20px;}
 .navgation {}
 .next-posts {}
 .prev-posts {}
@@ -327,7 +327,21 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
 
-#sidebar {border-top: 1px solid #DDD;}
+#sidebar{border-top: 1px solid #DDD; padding-top:30px;
+background-color:black;
+
+}
+
+#sidebar .inhalt {
+margin-left: auto;
+margin-right: auto;
+width:70%;
+color:#ccc;
+}
+#sidebar a {
+color: #ccc;
+background-color:transparent;
+}
 
 html {
 background-color: #EEE;
@@ -336,16 +350,15 @@ background-color: #EEE;
 
 a {text-decoration:none; background:#ddd; color:#333;}
 
+.navigation{
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: table;
+	text-align:center;
+	padding-bottom:20px;
+ } 
+.pagination {}
 
-
-.pagination {
-clear:both;
-padding:20px 0;
-position:relative;
-font-size:11px;
-line-height:13px;
-}
- 
 .pagination span, .pagination a {
 display:block;
 float:left;
@@ -353,8 +366,6 @@ margin: 2px 2px 2px 0;
 padding:6px 9px 5px 9px;
 text-decoration:none;
 width:auto;
-color:#fff;
-background: #555;
 }
  
 .pagination a:hover{
@@ -412,4 +423,5 @@ text-decoration: none;
 text-align: center;
 color: #565656 !important;
 }
+.dp50 {width:50%;  float:left;  display: inline;  *margin-right:-1px; }
 

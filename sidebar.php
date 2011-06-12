@@ -1,39 +1,82 @@
+<div class="eintrag">
+		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+</div>
+
+
 <div id="sidebar">
+<div class="inhalt">
 
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
-    
-        <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
 
-    	<?php get_search_form(); ?>
-    
-    	<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
-    
-    	<h2>Archives</h2>
-    	<ul>
-    		<?php wp_get_archives('type=monthly'); ?>
-    	</ul>
-        
-        <h2>Categories</h2>
-        <ul>
-    	   <?php wp_list_categories('show_count=1&title_li='); ?>
-        </ul>
-        
-    	<?php wp_list_bookmarks(); ?>
-    
-    	<h2>Meta</h2>
-    	<ul>
-    		<?php wp_register(); ?>
-    		<li><?php wp_loginout(); ?></li>
-    		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-    		<?php wp_meta(); ?>
-    	</ul>
-    	
-    	<h2>Subscribe</h2>
-    	<ul>
-    		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
-    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
-    	</ul>
-	
-	<?php endif; ?>
+
+<div class="dp50">
+	<div class="dp50">
+
+
+		<h4>Suche</h4>
+
+ 
+<form method="get" id="searchform" action="<?php echo get_option('home'); ?>/"> 
+<input value="Suche" name="s" id="s" onblur="if (this.value == '')  
+{this.value = 'Suche';}" onfocus="if (this.value == 'Suche')  
+{this.value = '';}" type="text"> 
+<input id="searchsubmit" type="hidden"> 
+</form>
+
+
+
+		<h4>Pages</h4>
+
+<ul>
+<?php wp_list_pages('title_li='); ?>
+</ul>
+
+
+
+	</div>
+
+
+	<div class="dp50">
+
+	<h4>Kategorien</h4>
+			<ul>
+      <ul><?php wp_list_categories('hide_empty=1&use_desc_for_title=1&exclude=1&title_li='); ?></ul>
+
+			</ul>
+
+
+
+	</div>
+</div>
+
+<div class="dp50">
+	<div class="dp50">
+	<h4>Archives</h4>
+	<ul>
+		<?php wp_get_archives('type=monthly&limit=12'); ?>
+	</ul>
+	</div>
+	<div class="dp50">
+	<h4>Blogroll</h4>
+  <ul>
+
+<?php
+          get_links('-1', '<li>', '</li>', '', FALSE, 'name',FALSE);
+     ?></ul>
+
+
+
+
+<h4>RSS Feeds</h4>
+	<ul>
+		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
+		<li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
+	</ul>
 
 </div>
+</div>
+
+	<?php endif; ?>
+
+<div class="" style="clear:both;"></div>
+
