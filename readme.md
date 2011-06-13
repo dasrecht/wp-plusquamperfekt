@@ -17,5 +17,5 @@ In addition to all the standard Wordpress elements and classes, we have added th
 5. Empty mobile and print style sheets, including blocks for device orientation
 6. Modernizr.js [http://www.modernizr.com/](http://www.modernizr.com/) enables HTML5 compatibility with IE (and a dozen other great features)
 7. IE-specific classes for simple CSS-targeting
-8. iPhone/iPad/iTouch icon snippets 
+8. iPhone/iPad/iTouch icon snippets
 9. Lots of other keen stuff...

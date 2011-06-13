@@ -343,7 +343,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 /*	Navigation & Pagination Styles
 	------------------------------	*/
 
-.navigation{margin-left: auto; margin-right: auto; display: table; text-align:center; padding-bottom:20px;} 
+.navigation{margin-left: auto; margin-right: auto; display: table; text-align:center; padding-bottom:20px;}
 
 .pagination {}
 .pagination span, .pagination a {display:block;float:left;margin: 2px 2px 2px 0;padding:6px 9px 5px 9px;text-decoration:none;width:auto;}

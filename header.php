@@ -86,8 +86,6 @@
 	<script type="text/javascript">
 		fbg.hideFOUT('onload');
 	</script>
-	
-
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

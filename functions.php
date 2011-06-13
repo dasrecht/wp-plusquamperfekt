@@ -1,8 +1,8 @@
 <?php
-	
+
 	// Add RSS links to <head> section
 	automatic_feed_links();
-	
+
 	// Load jQuery
 	if ( !function_exists(core_mods) ) {
 		function core_mods() {
@@ -22,7 +22,7 @@
     }
     add_action('init', 'removeHeadLinks');
     remove_action('wp_head', 'wp_generator');
-    
+
     if (function_exists('register_sidebar')) {
     	register_sidebar(array(
     		'name' => 'Sidebar Widgets',
@@ -34,7 +34,7 @@
     		'after_title'   => '</h2>'
     	));
     }
-    
+
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
 
@@ -42,11 +42,11 @@
 
 function pagination($pages = '', $range = 4)
 {
-     $showitems = ($range * 2)+1;  
- 
+     $showitems = ($range * 2)+1;
+
      global $paged;
      if(empty($paged)) $paged = 1;
- 
+
      if($pages == '')
      {
          global $wp_query;
@@ -55,14 +55,14 @@ function pagination($pages = '', $range = 4)
          {
              $pages = 1;
          }
-     }   
- 
+     }
+
      if(1 != $pages)
      {
          echo "<div class=\"pagination\">";
          if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
          if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
- 
+
          for ($i=1; $i <= $pages; $i++)
          {
              if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
@@ -70,7 +70,7 @@ function pagination($pages = '', $range = 4)
                  echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
              }
          }
- 
+
          if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";
          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
          echo "</div>\n";
@@ -115,14 +115,14 @@ function pqp_comments($comment, $args, $depth) {
          			<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
         		</div>
 		</div>
-	
+
 
 	<?php if ($comment->comment_approved == '0') : ?>
          <em><?php _e('Your comment is awaiting moderation.') ?></em>
          <br />
         <?php endif; ?>
 
-     
+
 
 
 	  </div>

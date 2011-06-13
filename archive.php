@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 		<?php if (have_posts()) : ?>
-			
+
 <!--
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
@@ -25,21 +25,21 @@
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h2 class="pagetitle">Blog Archives</h2>
-			
+
 			<?php } ?>
 
 			-->
 
 			<?php while (have_posts()) : the_post(); ?>
-			
+
 
 		<?php get_template_part( 'content', get_post_format() ); ?>
-			
-			
+
+
 			<?php endwhile; ?>
 
 			<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
-			
+
 	<?php else : ?>
 
 		<h2>Nothing found</h2>

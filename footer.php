@@ -11,7 +11,7 @@
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+
 <script>
 
   var _gaq = _gaq || [];
@@ -26,7 +26,7 @@
 
 </script>
 -->
-	
+
 </body>
 
 </html>
