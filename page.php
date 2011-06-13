@@ -3,10 +3,8 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article class="post" id="post-<?php the_ID(); ?>">
-		  
-		<div class="eintrag">
 
-		  <div class="kommentarthingy"><?php comments_popup_link('0', '1 ', '%'); ?></div>
+		<div class="eintrag">
 
 		  <div class='der-inhalt'>
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
@@ -17,7 +15,7 @@
 
 			<footer class="postmetadata versteckt">
 				<?php the_tags('Tags: ', ', ', '<br />'); ?>
-				Posted in <?php the_category(', ') ?> | 
+				Posted in <?php the_category(', ') ?> |
 			</footer>
 		</div> <!-- eintrag -->
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
