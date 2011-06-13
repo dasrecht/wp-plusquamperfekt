@@ -3,19 +3,23 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article class="post" id="post-<?php the_ID(); ?>">
+		  
+		<div class="eintrag">
 
-			<h2><?php the_title(); ?></h2>
+		  <div class="kommentarthingy"><?php comments_popup_link('0', '1 ', '%'); ?></div>
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+		  <div class='der-inhalt'>
+			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-			<div class="entry">
+				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+				<?php  the_content(); ?>
+		  </div><!-- der inhalt -->
 
-				<?php the_content(); ?>
-
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
-			</div>
-
+			<footer class="postmetadata versteckt">
+				<?php the_tags('Tags: ', ', ', '<br />'); ?>
+				Posted in <?php the_category(', ') ?> | 
+			</footer>
+		</div> <!-- eintrag -->
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
 		</article>
