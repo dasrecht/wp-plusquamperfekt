@@ -20,7 +20,7 @@
 	</div>
 
 	<ol class="commentlist">
-		<?php wp_list_comments(); ?>
+		<?php wp_list_comments('callback=pqp_comments'); ?>
 	</ol>
 
 	<div class="navigation">
@@ -75,6 +75,7 @@
 
 </div>
 		<?php endif; ?>
+
 <div class="dp100">
 	<textarea name="comment" id="comment" style="width:100%;" rows="10" tabindex="4"></textarea>
 	<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>

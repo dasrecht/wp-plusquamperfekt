@@ -15,7 +15,7 @@
 			<input id="searchsubmit" type="hidden">
 		</form>
 
-		<h4>Pages</h4>
+		<h4>Seiten</h4>
 		<ul>
 		<?php wp_list_pages('title_li='); ?>
 		</ul>
@@ -31,7 +31,7 @@
 
 <div class="dp50">
 	<div class="dp50">
-		<h4>Archives</h4>
+		<h4>Archiv</h4>
 		<ul>
 		<?php wp_get_archives('type=monthly&limit=12'); ?>
 		</ul>
@@ -44,8 +44,8 @@
 
 		<h4>RSS Feeds</h4>
 		<ul>
-		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
-		<li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
+		<li><a href="<?php bloginfo('rss2_url'); ?>">Beitr&auml;ge (RSS)</a></li>
+		<li><a href="<?php bloginfo('atom_url'); ?>">Beitr&auml;ge (Atom)</a></li>
 		</ul>
 	</div>
 </div>
