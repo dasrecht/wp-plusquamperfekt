@@ -366,5 +366,6 @@ color: #565656 !important;
 
 header {position: absolute;left: 42px;top: 42px;padding:10px;}
 
-article:first-of-type {margin-top:111px; border-top:none !important;}
-article:first-of-type .kommentarthingy {margin-top:-111px;}
+article:first-of-type .eintrag:first-of-type {padding-top:130px;}
+article:first-of-type {border-top:none !important;}
+article:first-of-type .kommentarthingy {margin-top:-130px;}

@@ -82,6 +82,12 @@
 
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/_/js/foutbgone.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		fbg.hideFOUT('onload');
+	</script>
+	
+
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
