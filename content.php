@@ -12,7 +12,7 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		  <div class="eintrag">
 
-		  <div class="kommentarthingy"><?php comments_popup_link('0', '1 ', '%'); ?></div>
+		  <div class="kommentarthingy"><?php comments_popup_link('0', '1 ', '%', '','<a href="#">off</a>'); ?></div>
 
 		  <div class='der-inhalt'>
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
