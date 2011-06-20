@@ -38,8 +38,6 @@
 
 			<?php endwhile; ?>
 
-			<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
-
 	<?php else : ?>
 
 		<h2>Nothing found</h2>
