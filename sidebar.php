@@ -39,7 +39,7 @@
 	<div class="dp50">
 		<h4>Blogroll</h4>
 		<ul>
-		<?php get_links('-1', '<li>', '</li>', '', FALSE, 'name',FALSE);?>
+		 <?php wp_list_bookmarks('title_li=&categorize=0'); ?>
 		</ul>
 
 		<h4>RSS Feeds</h4>
