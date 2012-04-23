@@ -18,3 +18,7 @@ It is based on the HTML5 Reset Wordpress theme [HTML5 Reset templates](https://g
 7. iPhone/iPad/iTouch icon snippets
 8. FOUT Protection
 9. Lots of other keen stuff...
+
+## Licensing
+This Wordpress Theme is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See [http://sam.zoy.org/wtfpl/COPYING](http://sam.zoy.org/wtfpl/COPYING) for more details.
+
